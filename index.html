@@ -11,11 +11,51 @@
         <div id = "main-body">
             <div id = "player-list" class="page">
                 <p>text</p>
+                
             </div>
             <div id = "player-create" class="page">
                 <p>text</p>
+                <div id="data-input">
+                    <form>
+                        <label for="position">Position</label>
+                    <br>
+                        <select id="position" name="position">
+                            <option value="gk">GK</option>
+                            <option value="rb">RB</option>
+                            <option value="cb">CB</option>
+                            <option value="lb">LB</option>
+                            <option value="cdm">CDM</option>
+                            <option value="rm">RM</option>
+                            <option value="cm">CM</option>
+                            <option value="lm">LM</option>
+                            <option value="cam">CAM</option>
+                            <option value="rf">RF</option>
+                            <option value="cf">CF</option>
+                            <option value="lf">LF</option>
+                            <option value="rw">RW</option>
+                            <option value="st">ST</option>
+                            <option value="lw">LW</option>
+                        </select>
+                    <br>
+                        <label for="club">Club</label>
+                    <br>
+                        <input type="text" id="club" name="club">
+                    <br>
+                        <label for="nation">Nation</label>
+                    <br>
+                        <input type="text" id="nation" name="nation">
+                    <br>
+                        <label for="player-name">Player Name</label>
+                    <br>
+                        <input type="text" id="player-name" name="player-name">
+                    </form>
+                </div>
+                <div id="submit-data">
+                    <button id="submit-data-button">Submit</button>
+                </div>
             </div>
         </div>
         <script src="script.js"></script>
+        <script src="player.js"></script>
     </body>
 </html>
