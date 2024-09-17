@@ -1,47 +1,36 @@
 //Defines a player object. The data from player create is used to construct a new player object
 
 class Player{
+    #position;
+    #name;
+    #nation;
+    #club;
+
     constructor(position, club, nation, playerName){
-        this.position = position;
-        this.club = club;
-        this.nation = nation;
-        this.playerName = playerName;
+        this.#position = position;
+        this.#club = club;
+        this.#nation = nation;
+        this.#name = playerName;
+    };
+    
+    get position(){
+        return this.#position;
     }
 
-    getPosition(){
-        return this.position;
-
+    get name(){
+        return this.#name;
     }
 
-    setPosition( newPosition ){
-        this.position = newPosition;
+    get nation(){
+        return this.#nation;
     }
 
-    getClub(){
-        return this.club;
-    }
-
-    setClub( newClub ){
-        this.club = newClub;
-    }
-
-    getNation(){
-        return this.nation;
-    }
-
-    setNation( newNation ){
-        this.nation = newNation;
-    }
-
-    getPlayerName(){
-        return this.playerName;
-    }
-
-    setPlayerName( newPlayerName ){
-        this.playerName = newPlayerName;
+    get club(){
+        return this.#club;
     }
 
     toString(){
-        return 'My name is ${this.getPlayerName}';
+        return ("My name is " + this.name);
     }
 }
+
