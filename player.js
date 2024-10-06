@@ -5,12 +5,14 @@ class Player{
     #name;
     #nation;
     #club;
+    #league;
 
-    constructor(position, club, nation, playerName){
+    constructor(position, club, nation, playerName, league){
         this.#position = position;
         this.#club = club;
         this.#nation = nation;
         this.#name = playerName;
+        this.#league = league;
     };
     
     get position(){
@@ -29,8 +31,12 @@ class Player{
         return this.#club;
     }
 
+    get league(){
+        return this.#league;
+    }
+
     toString(){
-        return ("My name is " + this.name);
+        return (this.name + " " + this.position + " " + this.nation + " " + this.club + " " + this.league);
     }
 }
 

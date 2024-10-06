@@ -30,6 +30,8 @@ h1{
     float:left;
     background-color: darkgray;
     width: 100%;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
     
 }
 
@@ -51,6 +53,10 @@ h1{
 
 #player-create p{
     color: white;
+}
+
+#chem-row{
+    text-align: center;
 }
 
 #player-list-container, #player-create{

@@ -13,14 +13,10 @@
                     <p>Roster</p>
                 </div>
                 <div id="player-list-row">
-                    <ul id="player-list" style="list-style-type:none;">
-                        <li>Coffee</li>
-                        <li>Tea</li>
-                        <li>Milk</li>
-                      </ul> 
+                    <ul id="player-list" style="list-style-type:none;"></ul> 
                 </div>
                 <div id="chem-row"> <!-- row to print squad chemistry -->
-
+                    <p id="chem-place-holder">Team Chemistry: </p>
                 </div>
 
                 
@@ -59,6 +55,10 @@
                     <br>
                         <input type="text" id="nation" name="nation">
                     <br>
+                        <label for="league">League</label>
+                    <br>
+                        <input type="text" id="league" name="league">
+                    <br>
                         <label for="player-name">Player Name</label>
                     <br>
                         <input type="text" id="player-name" name="player-name">
@@ -69,8 +69,8 @@
                 </div>
             </div>
         </div>
-        <script src="script.js"></script>
         <script src="player.js"></script>
         <script src="squad.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
