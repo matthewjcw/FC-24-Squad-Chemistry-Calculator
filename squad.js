@@ -17,4 +17,14 @@ class Squad{
     listPlayers() {
         return this.squadList;
     }
+
+    alertPlayers(){
+        for (let i = 0; i < this.squadList.length; i++) {
+            alert(this.squadList[i]);
+          }
+    }
+    
+    printPlayersInList(){
+        
+    }
 }
